@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handmade Marketplace - Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url("data:image/jpeg;base64,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")
+        }
+
+        header {
+            background-color: #333;
+            color: white
+            padding: 1em;
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 1em;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Handmade Marketplace</h1>
+        <h2>Sign-up</h2>
+    </header>
+    <form id="signupForm" action="login.html">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+        <button type="submit">Sign Up</button>
+    </form>
+</body>
+</html>

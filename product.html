@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handmade Craft Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 0.5em;
+        }
+
+        .india {
+            text-align: center;
+            font-size: 60px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 1em;
+        }
+
+        section {
+            padding: 1em;
+        }
+
+        .product {
+            border: 1px solid #ccc;
+            margin: 1em;
+            padding: 1em;
+            background-color: white;
+            overflow: hidden;
+            display: grid;
+            grid-template-rows: auto 1fr auto auto;
+
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        label {
+            margin-right: 10px;
+        }
+
+        #search {
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 5px 5px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: 1px solid #4CAF50;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: yellow;
+            color: #4CAF50;
+        }
+
+        button:active {
+            background-color: #45a049;
+            color: yellow;
+            border: 1px solid #45a049;
+        }
+
+        .drawer {
+            display: none;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            margin: 5px 0;
+        }
+
+        .drawer-button {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+
+        section {
+            display: grid;
+            grid-template-rows: auto auto;
+            grid-template-columns: repeat(3, 1fr); /* Change to 3 columns */
+            gap: 1em; /* Adjust the gap as needed */
+        }
+
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Change to 3 columns */
+            gap: 1em; /* Adjust the gap as needed */
+            padding: 1em;
+        }
+        .satyam{
+            height: 100%;
+            width: 300%;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product img:hover {
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Handmade Craft Marketplace</h1>
+    </header>
+    <form id="searchForm">
+        <label for="search">Search:</label>
+        <input type="text" id="search" name="q" placeholder="Type to search">
+        <button type="submit">Search</button>
+    </form>
+
+    <div id="resultsContainer">
+        <!-- Product results will be displayed here -->
+    </div>
+
+    <script src="script.js"></script>
+
+    <nav>
+        <a href="online.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="contact.html">About us</a>
+    </nav>
+    <button id="menuButton">Menu</button>
+
+    <nav>
+        <a href="#">MY PROFILE</a>
+        <a href="#">MY ORDERS</a>
+        <a href="#">MY WISHLIST</a>
+        <a href="signup.html">SIGN UP</a>
+        <a href="login.html">LOG IN</a>
+        <a href="custser.html">CUSTOMER SERVICE</a>
+    </nav>
+
+    <!-- Your other HTML elements -->
+
+    <script>
+        // JavaScript code to make the button work
+        document.getElementById("myButton").addEventListener("click", function() {
+            alert("Add to cart clicked!");
+            // Add your desired functionality here
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuButton = document.getElementById("menuButton");
+            const navigation = document.querySelector("nav");
+
+            menuButton.addEventListener("click", function () {
+                // Toggle the visibility of the navigation menu
+                navigation.style.display = (navigation.style.display === "none" || navigation.style.display === "") ? "block" : "none";
+            });
+        });
+    </script>
+
+        </div>
+    </section>
+    <div class="product-container">
+    <section>
+        <div class="product satyam" class=":hover">
+            <h11>Wooden desk organiser</h11>
+            <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/showpiece-figurine/p/b/4/12-5-6-45-juh-21-geetanjali-home-decor-10-original-imag4vegy4js99gz.jpeg?q=70" width="200" alt="handmadecraft11">
+    
+    
+            
+              <p>  Get organized and let your pens write for you a bit more! This pen stand by is a wholesome of skillfulness and elegance, together. Crafted with the most durable and fine wood, it ensures the longevity in the usage. You can also see a finely carved design on its exterior, that brings the essence of elegance on your working table or in your working area.</p>
+               <p> $25.00</p>
+                <button>Add to cart</button>
+                <button>Add to wishlist</button>
+                <button>Buy now</button>
+            
+        </div>
+    </section>
+    <section>
+        <div class="product satyam">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFOJY-TO_oHrEPpyWwIpaimmg5VLlsYQsopw&usqp=CAU" alt="Handmade Craft 1">
+            <h2>wall decoration</h2>
+            <p>beautiful room decoration wall painting</p>
+            <p>$20.00</p>
+            <button>Add to Cart</button>
+            <button>Add to wishlist</button>
+            <button>Buy now</button>
+        </div>
+    </section>
+    <section>
+        <div class="product satyam">  
+            <img src="https://m.media-amazon.com/images/I/71V4vLyFffL._SX679_.jpg" width="300" alt="Handmade Craft 2">
+            <h2>sea shell , Door Decorative</h2>
+            <p>Handmade Door Decorative product to hang on Door</p>
+            <p>$25.00</p>
+            <button>Add to Cart</button>
+            <button>Add to wishlist</button>
+            <button>Buy now</button>
+        </div>
+    </section>
+</section>
+<!-- Add more product entries as needed -->
+<div class="product">
+    <h3>sikki Grass Plate</h3>
+    <img src="https://m.media-amazon.com/images/I/91a6eOXOS-L._AC_UL480_FMwebp_QL65_.jpg" width="200" alt="sikki Grass">
+    <p>Shilpkriti Jute Planter, Modern Authentic Handmade Product, Eco-Friendly, for Different Kinds of Plants & Household Purposes </p>
+    <p>$30.00</p>
+    <button>Add to Cart</button>
+    <button>Add to wishlist</button>
+    <button>Buy now</button>
+</div>
+<div class="product">
+    <h4>Rajasthani stool</h4>
+    <img src="https://m.media-amazon.com/images/I/61WTZ+qV8ML._SY300_SX300_.jpg"width="200" alt="Handmade craft 4">
+    <p>Natural Hand Made Bamboo (SARKANDA) Natural Beige Rajasthani Stool/Chair | Cane Stool |Assam Cane Stool(15x15inch) </p>
+    <p>$35.00</p>
+    <button>Add to Cart</button>
+    <button>Add to wishlist</button>
+    <button>Buy now</button>
+</div>
+<div class="product">
+    <h5>Handmade Bags</h5>
+    <img src="https://m.media-amazon.com/images/I/51lA2uq1FML._SY300_SX300_QL70_FMwebp_.jpg" alt="Handmade craft 5">
+    <p>Pranaam product handmade bag shape with pasupu kumkum ethnic latest tamboolam return gifts 3 * 2inches (mix color) </p>
+    <p>$15.00</p>
+    <button>Add to Cart</button>
+    <button>Add to wishlist</button>
+    <button>Buy now</button>
+</div>
+<div class="product">
+    <h6>Handmade Dustbin</h6>
+    <img src="https://m.media-amazon.com/images/I/517bFqo+lVL._SY300_SX300_.jpg"width="200" alt="Handmade craft 6">
+    <p>Handmade Dry Grass Biodegradable Open-Top Waste Dustbin</p>
+    <p>$10.00</p>
+    <button>Add to Cart</button>
+    <button>Add to wishlist</button>
+    <button>Buy now</button>
+</div>
+<div class="product">
+    <h7> Handmade Tissue Box</h7>
+    <img src="https://m.media-amazon.com/images/I/51vMHuOkK4L._SX300_SY300_QL70_FMwebp_.jpg" width="200" alt="Handmade craft 7">
+    <p>Tissue Box Holder, Paper Napkin Holder, Wooden Cover Plastic Tissue Dispenser for Home, Bathroom, Bedroom, Office, Restaurant and Car Decoration- Rectangle Shape</p>
+    <p>$5.00</p>
+    <button>Add to Cart</button>
+    <button>Add to wishlist</button>
+    <button>Buy now</button>
+</div>
+<div class="product">
+    <h8>clay dhupdhani</h8>
+    <img src="https://m.media-amazon.com/images/I/318ABiNeKZS._SX300_SY300_QL70_FMwebp_.jpg" width="200" alt="Handmade craft 8">
+    <p>Desi Handmade Natural Clay Dhupdhani धुपेड़ा Dhoop Loban Dani/Dhuni Burner Holder/Pot Stand for Puja/Hawan/Dhuni [Shop/Office/Room/Gardan etc.]</p>
+    <p>$9.00</p>
+    <button>Add to cart</button>
+    <button>Add to wishlist</button>
+    <button>Buy now</button>
+</div>
+<div class="product">
+    <h9>Artificial Grass</h9>
+    <img src="https://m.media-amazon.com/images/I/71zmM0cpk-L._AC_UL480_FMwebp_QL65_.jpg" width="200" alt="Handmadecraft 9">
+    <p>Go Hooked Artificial Grass (Green), Pack of 1 (GRASSTRELLISSETOF1)</p>
+    <p>$10.00</p>
+    <button>Add to Cart</button>
+    <button>Add to wishlist</button>
+    <button>Buy now</button>
+</div>
+</section>
+<section>
+<div class="product satyam">
+    <h10 style="font: 70px; color: black;">Jaipur woolen prayer mat</h10>
+    <img src="https://rukminim2.flixcart.com/image/612/612/kxp0mfk0/mat/g/o/h/medium-soft-wool-handmade-pooja-aasan-baby-sitting-mat-original-imaga3fhgbums6xs.jpeg?q=70" width="200" alt="handmadecraft10">
+    <p>JAIPUR WOOLLEN HANDICRAFT Presents you a Trendy & Affuently woollen Pooja aasan. This contempory woollen Pooja aasan is produced by skilled handmade weavers. This Woollen Puja Aasan is superior quality product. This is available in attractive colour. You can make your Puja Room brighten by using this aasan. This is very soft and comfy. This can be easily incorporated in varied home settings.</p>
+    <p>$20.00</p>
+    <button>Add to Cart</button>
+    <button>Add to wishlist</button>
+    <button>Buy now</button>
+</div>
+</section>
+<section>
+<div class="product satyam">
+    <h11>Wooden desk organiser</h11>
+    <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/showpiece-figurine/p/b/4/12-5-6-45-juh-21-geetanjali-home-decor-10-original-imag4vegy4js99gz.jpeg?q=70" width="200" alt="handmadecraft11">
+    <p>
+        Get organized and let your pens write for you a bit more! This pen stand by is a wholesome of skillfulness and elegance, together. Crafted with the most durable and fine wood, it ensures the longevity in the usage. You can also see a finely carved design on its exterior, that brings the essence of elegance on your working table or in your working area.</p>
+        <p>$25.00</p>
+        <button>Add to cart</button>
+        <button>Add to wishlist</button>
+        <button>Buy now</button>
+</div>
+</section>
+<section>
+    <div class="product satyam">
+        <h12>Bastar Tribal Bird Figurine</h12>
+        <img src="https://theindiacrafthouse.com/cdn/shop/products/TheIndiaCraftHouseBastarTribalBirdFigurine_Setof2_-SVC02B_400x400.jpg?v=1618294143" width="200" alt="handcratf12">
+        <p>Set of 2 premium bird figurines • Add a rustic charm to your home décor with these exotic bird figurines • Reflecting the heritage of the Bastar Tribal Metal Art, a rare & precious art form developed by the tribals of the Bastar region in Chhattisgarh • Crafted with iron by traditional & proficient artisans from the region • The perfect gift for special occasions and housewarming parties</p>
+        <p>$40.00</p>
+        <button>Add to Cart</button>
+        <button>Add to wishlist</button>
+        <button>Buy now</button>
+    </div>
+</section>
+<section>
+    <div class="product satyam">
+        <h13>Handwoven Kilim Long Runner Rug</h13>
+        <img src="https://theindiacrafthouse.com/cdn/shop/products/DHSKRSA_9a89c0e7-8b28-42ca-813d-466b2ce0a2d3_400x400.jpg?v=1579728636" width="200" alt="handcraft13">
+        <p>Exclusive Handwoven Kilim Long Runner Rug (6 x 2 ft). The name Kilim properly denotes a specific weaving technique. Kilim are called flatweave or flatware rugs, using only warp and weft threads. Kilim patterns are generally angular or geometric, created by winding the weft threads, which are coloured, backwards and forwards around pairs of warp threads, leaving the resulting weave completely flat. This technique produces bold, sharp patterns that weavers enjoy creating with more freedom than a plain weave technique allows them. Wool is the primary material used to make a kilim rug</p>
+        <p>$35.00</p>
+        <button>Add to cart</button>
+        <button>Add to wishlist</button>
+        <button>Buy now</button>
+    </div>
+</section>
+
+<section>
+    <div class="product satyam">
+        <h14>Bamboo Pendant Light</h14>
+        <img src="https://img.indiahandmade.com/catalog/product/cache/4936290bf7682d5a4187df0f27af598f/0/1/01_25_1.jpg" width="300" alt="handcraft14">
+        <p>Beautifull Rustic Bamboo Wall Pendant Light; for Home, Office, Restaurant, Terrace, Garden  & Lawns Etc.</p>
+        <p>$30.00</p>
+        <button>Add to cart</button>
+        <button>Add to wishlist</button>
+        <button>Buy now</button>
+    </div>
+</section>
+<section>
+    <div class="product satyamz">
+        <h14>Night lamp</h14>
+        <img src="https://img.indiahandmade.com/catalog/product/cache/4936290bf7682d5a4187df0f27af598f/2/0/20200107_132539_1-removebg-preview.png" width="200" alt="handcraft14">
+        <p>Beautifull Rustic Bamboo Wall Pendant Light; for Home, Office, Restaurant, Terrace, Garden  & Lawns Etc.</p>
+        <p>$25.00</p>
+        <button>Add to cart</button>
+        <button>Add to wishlist</button>
+        <button>Buy now</button>
+    </div>
+</section>
+<section>
+    <div class="product satyamz">
+        <h14>Night lamp</h14>
+        <img src="https://m.media-amazon.com/images/I/81As0c2fDzS._AC_UL480_FMwebp_QL65_.jpg" width="200" alt="handcraft14">
+        <p>It Is A Traditional Item Made up of Recycled Material . This is A Indian Handmade Doll Rider . Each Piece has been Handcrafted, Hand Printed with Mineral Beads. This Decorative Showpiece gives A Regal Touch to Your Home With This Couple Doll and Hand Work</p>
+        <p>$20.00</p>
+        <button>Add to cart</button>
+        <button>Add to wishlist</button>
+        <button>Buy now</button>
+    </div>
+</section>
+</body>
+</html>

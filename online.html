@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handmade Craft Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 0.5em;
+        }
+
+        .india {
+            text-align: center;
+            font-size: 60px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 1em;
+        }
+
+        section {
+            padding: 1em;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1em;
+        }
+
+        .product {
+            border: 1px solid #ccc;
+            padding: 1em;
+            background-color: white;
+            overflow: hidden;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Apply styles to the form container */
+        form {
+            text-align: center;
+        }
+
+        /* Style the label for better alignment */
+        label {
+            margin-right: 10px;
+        }
+
+        /* Style the search input box */
+        #search {
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Style the search button */
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50; /* Green background color */
+            color: white; /* White text color */
+            border: 1px solid #4CAF50; /* Green border */
+            border-radius: 4px;
+            cursor: pointer; /* Change cursor on hover */
+        }
+
+        /* Change button style on hover */
+        button:hover {
+            background-color: yellow;
+            color: #4CAF50;
+        }
+
+        /* Change button style on active (when clicked) */
+        button:active {
+            background-color: #45a049;
+            color: white;
+            border: 1px solid #45a049;
+        }
+
+        .home {
+            background-image: url('https://img.indiahandmade.com/wysiwyg/craftting.jpg');
+            background-size: 100%; /* Adjust as needed */
+            background-position: center; /* Adjust as needed */
+            background-repeat: no-repeat;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Handmade Craft Marketplace</h1>
+    </header>
+    <form id="searchForm">
+        <label for="search">Search:</label>
+        <input type="text" id="search" name="q" placeholder="Type to search">
+        <button type="submit">Search</button>
+    </form>
+
+    <div id="resultsContainer">
+        <!-- Product results will be displayed here -->
+    </div>
+
+    <nav>
+        <a href="online.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="contact.html">About us</a>
+    </nav>
+    <button id="menuButton">Menu</button>
+
+    <nav>
+        <a href="#">my profile</a>
+        <a href="#">my orders</a>
+        <a href="#">my wishlist</a>
+        <a href="signup.html">sign up</a>
+        <a href="login.html">Log in</a>
+        <a href="custser.html">customer serivce</a>
+    </nav>
+
+    <!-- Your other HTML elements -->
+
+    <section class="home">
+        <div class="Home">
+            <h1 class="india">
+            </h1>
+        </div>
+    </section>
+    <section>
+        <div class="product" class=":hover">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFOJY-TO_oHrEPpyWwIpaimmg5VLlsYQsopw&usqp=CAU" alt="Handmade Craft 1">
+            <h2>wall decoration</h2>
+            <p>beautiful room decoration wall painting</p>
+            <p>$20.00</p>
+            <button>Add to Cart</button>
+            <button>Add to wishlist</button>
+            <button>Buy now</button>
+        </div>
+    </section>
+    <section>
+        <div class="product">  
+            <img src="https://m.media-amazon.com/images/I/71V4vLyFffL._SX679_.jpg " width="300" alt="Handmade Craft 2">
+            <h2>sea shell , Door Decorative</h2>
+            <p>Handmade Door Decorative product to hang on Door</p>
+            <p>$25.00</p>
+            <button>Add to Cart</button>
+            <button>Add to wishlist</button>
+            <button>Buy now</button>
+        </div>
+    </section>
+    <!-- Add more product entries as needed -->
+    <div class="product">
+        <h3>sikki Grass plates</h3>
+        <img src="https://m.media-amazon.com/images/I/91a6eOXOS-L._AC_UL480_FMwebp_QL65_.jpg" width="200" alt="sikki Grass">
+        <p>Shilpkriti Jute Planter, Modern Authentic Handmade Product, Eco-Friendly, for Different Kinds of Plants & Household Purposes </p>
+        <p>$30.00</p>
+        <button>Add to Cart</button>
+        <button>Add to wishlist</button>
+        <button>Buy now</button>
+    </div>
+    <div class="product">
+        <h4>Rajasthani stool</h4>
+        <img src="https://m.media-amazon.com/images/I/61WTZ+qV8ML._SY300_SX300_.jpg" alt="Handmade craft 4">
+        <p>Natural Hand Made Bamboo (SARKANDA) Natural Beige Rajasthani Stool/Chair | Cane Stool |Assam Cane Stool(15x15inch) </p>
+        <p>$35.00</p>
+        <button>Add to Cart</button>
+        <button>Add to wishlist</button>
+        <button>Buy now</button>
+    </div>
+    <div class="product">
+        <h5>Handmade Bags</h5>
+        <img src="https://m.media-amazon.com/images/I/51lA2uq1FML._SY300_SX300_QL70_FMwebp_.jpg" alt="Handmade craft 5">
+        <p>Pranaam product handmade bag shape with pasupu kumkum ethnic latest tamboolam return gifts 3 * 2inches (mix color) </p>
+        <p>$15.00</p>
+        <button>Add to Cart</button>
+        <button>Add to wishlist</button>
+        <button>Buy now</button>
+    </div>
+    <div class="product">
+        <h6>Handmade Dustbin</h6>
+        <img src="https://m.media-amazon.com/images/I/517bFqo+lVL._SY300_SX300_.jpg" width="300" alt="Handmade craft 6">
+        <p>Handmade Dry Grass Biodegradable Open-Top Waste Dustbin</p>
+        <p>$10.00</p>
+        <button>Add to Cart</button>
+        <button>Add to wishlist</button>
+        <button>Buy now</button>
+    </div>
+    <div class="product">
+        <h7> Handmade Tissue Box</h7>
+        <img src="https://m.media-amazon.com/images/I/51vMHuOkK4L._SX300_SY300_QL70_FMwebp_.jpg" width="200" alt="Handmade craft 7">
+        <p>Tissue Box Holder, Paper Napkin Holder, Wooden Cover Plastic Tissue Dispenser for Home, Bathroom, Bedroom, Office, Restaurant and Car Decoration- Rectangle Shape</p>
+        <p>$5.00</p>
+        <button>Add to Cart</button>
+        <button>Add to wishlist</button>
+        <button>Buy now</button>
+    </div>
+    <div class="product">
+        <h8>clay dhupdhani</h8>
+        <img src="https://m.media-amazon.com/images/I/318ABiNeKZS._SX300_SY300_QL70_FMwebp_.jpg" width="200" alt="Handmade craft 8">
+        <p>Desi Handmade Natural Clay Dhupdhani धुपेड़ा Dhoop Loban Dani/Dhuni Burner Holder/Pot Stand for Puja/Hawan/Dhuni [Shop/Office/Room/Gardan etc.]</p>
+        <p>$9.00</p>
+        <button>Add to cart</button>
+        <button>Add to wishlist</button>
+        <button>Buy now</button>
+    </div>
+    <div class="product">
+        <h9>Artificial Grass</h9>
+        <img src="https://m.media-amazon.com/images/I/71zmM0cpk-L._AC_UL480_FMwebp_QL65_.jpg" width="200" alt="Handmadecraft 9">
+        <p>Go Hooked Artificial Grass (Green), Pack of 1 (GRASSTRELLISSETOF1)</p>
+        <p>$10.00</p>
+        <button>Add to Cart</button>
+        <button>Add to wishlist</button>
+        <button>Buy now</button>
+    </div>
+    <div class="product">
+        <h10 style="font: 70px; color: black;">Jaipur woolen prayer mat</h10>
+        <img src="https://rukminim2.flixcart.com/image/612/612/kxp0mfk0/mat/g/o/h/medium-soft-wool-handmade-pooja-aasan-baby-sitting-mat-original-imaga3fhgbums6xs.jpeg?q=70" width="200" alt="handmadecraft10">
+        <p>JAIPUR WOOLLEN HANDICRAFT Presents you a Trendy & Affuently woollen Pooja aasan. This contempory woollen Pooja aasan is produced by skilled handmade weavers. This Woollen Puja Aasan is superior quality product. This is available in attractive colour. You can make your Puja Room brighten by using this aasan. This is very soft and comfy. This can be easily incorporated in varied home settings.</p>
+        <p>$20.00</p>
+        <button>Add to Cart</button>
+        <button>Add to wishlist</button>
+        <button>Buy now</button>
+    </div>
+    <div class="product">
+        <h11>Wooden desk organiser</h11>
+        <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/showpiece-figurine/p/b/4/12-5-6-45-juh-21-geetanjali-home-decor-10-original-imag4vegy4js99gz.jpeg?q=70" width="200" alt="handmadecraft11">
+        <p>
+            Get organized and let your pens write for you a bit more! This pen stand by is a wholesome of skillfulness and elegance, together. Crafted with the most durable and fine wood, it ensures the longevity in the usage. You can also see a finely carved design on its exterior, that brings the essence of elegance on your working table or in your working area.</p>
+            <p>$25.00</p>
+            <button>Add to cart</button>
+            <button>Add to wishlist</button>
+            <button>Buy now</button>
+    </div>
+</body>
+</html>
